@@ -61,6 +61,7 @@ public class FXMLDocumentController implements Initializable {
 
     Problem problem = new Problem();
     DbLinker dblinker = new DbLinker();
+   
 
     @FXML
     public void Submit(ActionEvent event) {
@@ -81,19 +82,7 @@ public class FXMLDocumentController implements Initializable {
 
     }
     
-  /*  @FXML
-    public void ReportAProblem(ActionEvent event) throws IOException, Exception{
-        System.out.println("hello");
-        Parent root1 = FXMLLoader.load(getClass().getResource("communityinaction-citizen.fxml"));
-        Scene scene = new Scene(root1);
-        Stage stage =new Stage();
-        stage.setScene(scene);
-        stage.show();
-        stage.close();
-        CommunityInAction_Citizen controler= new CommunityInAction_Citizen();
-        controler.start(stage);
-    }*/
-
+  
     @FXML
     private void handleButtonAction(ActionEvent event) {
 

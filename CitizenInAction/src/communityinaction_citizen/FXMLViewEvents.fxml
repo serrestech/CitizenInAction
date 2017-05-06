@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="514.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="communityinaction_citizen.FXMLViewEventsController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="604.0" style="-fx-background-color: #FFE4C4;">
+         <left>
+            <VBox prefHeight="454.0" prefWidth="158.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="problemsLabel" prefHeight="19.0" prefWidth="158.0" text="Latest  Event" textFill="#333a61" underline="true">
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <font>
+                        <Font name="Leelawadee Bold" size="21.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <ListView fx:id="ListViewEvent" prefHeight="443.0" prefWidth="158.0" style="-fx-background-color: #f2ffcc;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ListView>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <VBox prefHeight="514.0" prefWidth="102.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Region prefHeight="387.0" prefWidth="115.0" />
+                  <Button fx:id="refreshButton" mnemonicParsing="false" prefHeight="20.0" prefWidth="102.0" style="-fx-background-color: #f2ffcc;" text="Refresh">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Region prefHeight="28.0" prefWidth="102.0" />
+                  <Button fx:id="exitButton" layoutX="10.0" layoutY="346.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="101.0" style="-fx-background-color: #f2ffcc;" text="Exit">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Region prefHeight="44.0" prefWidth="102.0" />
+               </children>
+            </VBox>
+         </right>
+         <center>
+            <Label fx:id="streetLabel" prefHeight="46.0" prefWidth="278.0" text="Type" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <Pane prefHeight="461.0" prefWidth="312.0">
+                     <children>
+                        <Label fx:id="LabelReliability" layoutX="14.0" layoutY="109.0" prefHeight="43.0" prefWidth="259.0" text="Reliability">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="LabelTitle" layoutX="14.0" layoutY="14.0" prefHeight="49.0" prefWidth="259.0" text="Title">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="LabelType" layoutX="17.0" layoutY="63.0" prefHeight="46.0" prefWidth="278.0" text="Type">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="LabelRoad" layoutX="14.0" layoutY="152.0" prefHeight="43.0" prefWidth="259.0" text="Road">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="LabelPostCode" layoutX="14.0" layoutY="195.0" prefHeight="43.0" prefWidth="259.0" text="Postcode">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="LabelDescription" layoutX="14.0" layoutY="246.0" prefHeight="49.0" prefWidth="259.0" text="Descriptoin">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="TextAreaDesctription" layoutX="7.0" layoutY="283.0" prefHeight="160.0" prefWidth="285.0" />
+                     </children>
+                  </Pane>
+               </graphic>
+            </Label>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

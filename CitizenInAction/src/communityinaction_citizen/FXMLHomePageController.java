@@ -31,6 +31,9 @@ public class FXMLHomePageController implements Initializable {
     @FXML
     private Button ButtonViewAnnouncements ;
     
+     @FXML
+    private Button ButtonViewEvent ;
+    
     
     @FXML
     private void ReportProblem(ActionEvent event) throws IOException{
@@ -50,6 +53,14 @@ public class FXMLHomePageController implements Initializable {
     app_stage.setScene(home_page_scene);
     app_stage.show();
 
+    }
+    @FXML
+    private void ViewEvent(ActionEvent event) throws IOException{
+    Parent home_page_parent=FXMLLoader.load(getClass().getResource("FXMLViewEvents.fxml"));
+    Scene home_page_scene=new Scene(home_page_parent);
+    Stage app_stage= (Stage) (((Node) event.getSource()).getScene().getWindow());
+    app_stage.setScene(home_page_scene);
+    app_stage.show();
     }
     
     @Override
