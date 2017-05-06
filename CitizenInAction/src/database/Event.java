@@ -69,20 +69,19 @@ public class Event {
         this.munincipality = munincipality;
     }
     
-     public void View(DbLinker dblinker) {
-
-        try {
-
-            String query = "select * from events";
-            dblinker.getSt().executeQuery(query);
-            System.out.println("successfull view \n");
-        } catch (Exception ex) {
-            System.out.println(ex);
-            System.out.println("error");
-
-        }
-
-    }
+    /*  public void View(DbLinker dblinker) {
+    
+    try {
+    
+    String query = "select * from events";
+    dblinker.getSt().executeQuery(query);
+    System.out.println("successfull view \n");
+    } catch (Exception ex) {
+    System.out.println(ex);
+    System.out.println("error");
+    
+    }*/
+    //}
     
     
     
