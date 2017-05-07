@@ -73,6 +73,58 @@ public class Municipallity {
         return population;
     }
     
+    /*-------Setters---*/
+
+    public void setMunicipality_id(int municipality_id) {
+        this.municipality_id = municipality_id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDeparment(String deparment) {
+        this.deparment = deparment;
+    }
+
+    public void setLaw(String law) {
+        this.law = law;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public void setFax(int fax) {
+        this.fax = fax;
+    }
+
+    public void setTelephone(int telephone) {
+        this.telephone = telephone;
+    }
+
+    public void setRoad(String road) {
+        this.road = road;
+    }
+
+    public void setNumberOfRoad(int numberOfRoad) {
+        this.numberOfRoad = numberOfRoad;
+    }
+
+    public void setPostCode(int postCode) {
+        this.postCode = postCode;
+    }
+
+    public void setMayor(String mayor) {
+        this.mayor = mayor;
+    }
+
+    public void setPopulation(int population) {
+        this.population = population;
+    }
+    
+    
+    
     
    
     
