@@ -73,7 +73,7 @@
                               <Font size="20.0" />
                            </font>
                         </Label>
-                        <TextArea fx:id="TextAreaDesctription" layoutY="261.0" prefHeight="160.0" prefWidth="285.0" visible="false" />
+                        <TextArea fx:id="TextAreaDesctription" layoutY="261.0" prefHeight="160.0" prefWidth="285.0" visible="false" wrapText="true" />
                         <Label fx:id="selectLabel" layoutX="27.0" layoutY="114.0" prefHeight="49.0" prefWidth="259.0" text="Select a Event from the list">
                            <font>
                               <Font size="20.0" />

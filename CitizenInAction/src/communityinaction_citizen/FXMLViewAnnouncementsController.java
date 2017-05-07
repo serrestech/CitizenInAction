@@ -71,6 +71,9 @@ public class FXMLViewAnnouncementsController implements Initializable {
     @FXML
     Button backButton;
 
+    @FXML
+    Label LabelDescription;
+
     Announcements shownnouncement = new Announcements();
     DbLinker dblinker = new DbLinker();
     private ResultSet result;
@@ -84,6 +87,7 @@ public class FXMLViewAnnouncementsController implements Initializable {
             TextAreaDesctription.setVisible(true);
             LabelRoad.setVisible(true);
             LabelPostcode.setVisible(true);
+            LabelDescription.setVisible(true);
             selectLabel.setVisible(false);
         }
         TextAreaDesctription.clear();
@@ -94,12 +98,12 @@ public class FXMLViewAnnouncementsController implements Initializable {
             result = dblinker.getSt().executeQuery(query);
 
             while (result.next()) {
-                LabelTitle.setText(result.getString("title"));
-                LabelRealiability.setText(result.getString("reliability"));
-                LabelType.setText(result.getString("an_type"));
+                LabelTitle.setText("Title: "+result.getString("title"));
+                LabelRealiability.setText("Reliability: "+result.getString("reliability"));
+                LabelType.setText("Type: "+result.getString("an_type"));
                 TextAreaDesctription.setText(result.getString("description"));
-                LabelRoad.setText(result.getString("road"));
-                LabelPostcode.setText(result.getString("postcode"));
+                LabelRoad.setText("Road: "+result.getString("road"));
+                LabelPostcode.setText("Postcode: "+result.getString("postcode"));
 
             }
         } catch (SQLException ex) {
@@ -115,9 +119,9 @@ public class FXMLViewAnnouncementsController implements Initializable {
         app_stage.setScene(home_page_scene);
         app_stage.show();
     }
-    
-    @FXML 
-    public void exitApplication(ActionEvent event){
+
+    @FXML
+    public void exitApplication(ActionEvent event) {
         System.exit(0);
     }
 
@@ -130,6 +134,7 @@ public class FXMLViewAnnouncementsController implements Initializable {
             TextAreaDesctription.setVisible(false);
             LabelRoad.setVisible(false);
             LabelPostcode.setVisible(false);
+            LabelDescription.setVisible(false);
             selectLabel.setVisible(true);
         }
         ListViewAnnouncement.getItems().clear();

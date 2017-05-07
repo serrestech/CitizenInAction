@@ -90,9 +90,9 @@ public class FXMLViewEventsController implements Initializable {
 
             while (result.next()) {
                 TextAreaDesctription.setText(result.getString("description"));
-                LabelTitle.setText(result.getString("title"));
-                LabelType.setText(result.getString("event_type"));
-                LabelLocation.setText(result.getString("location"));
+                LabelTitle.setText("Title: "+result.getString("title"));
+                LabelType.setText("Type: "+result.getString("event_type"));
+                LabelLocation.setText("Location: "+result.getString("location"));
             }
         } catch (SQLException ex) {
             System.out.println(ex);
