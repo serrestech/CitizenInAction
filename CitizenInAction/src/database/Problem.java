@@ -87,7 +87,7 @@ public class Problem {
 
         try {
 
-           String query = "INSERT INTO problem" + "(title,description,road,street_number,area)" + "VALUES('" +title + "','" +description + "','" + road + "','" + numberOfRoad + "','" + area + "')";
+           String query = "INSERT INTO problem" + "(title,description,road,street_number,area,problem_type)" + "VALUES('" +title + "','" +description + "','" + road + "','" + numberOfRoad + "','" + area + "','" + typeOfProblem + "')";
             dblinker.getSt().executeUpdate(query);
             System.out.println("successfull insert \n");
         } catch (Exception ex) {

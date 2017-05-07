@@ -6,14 +6,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="communityinaction_citizen.FXMLHomePageController">
+<AnchorPane id="AnchorPane" prefHeight="372.0" prefWidth="275.0" style="-fx-background-color: #FFE4C4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="communityinaction_citizen.FXMLHomePageController">
    <children>
-      <AnchorPane layoutX="-3.0" layoutY="-1.0" prefHeight="400.0" prefWidth="606.0" style="-fx-background-color: #FFE4C4;">
-         <children>
-            <Button fx:id="ButtonProblem" layoutX="237.0" layoutY="52.0" mnemonicParsing="false" onAction="#ReportProblem" prefHeight="51.0" prefWidth="133.0" style="-fx-background-color: #f2ffcc;" text="Report Problem" />
-            <Button fx:id="ButtonViewAnnouncements" layoutX="237.0" layoutY="142.0" mnemonicParsing="false" onAction="#ViewAnnouncement" prefHeight="51.0" prefWidth="133.0" style="-fx-background-color: #f2ffcc;" text="View Announcements" />
-            <Button fx:id="ButtonViewEvent" layoutX="237.0" layoutY="242.0" mnemonicParsing="false" onAction="#ViewEvent" prefHeight="51.0" prefWidth="133.0" style="-fx-background-color: #f2ffcc;" text="View Events" />
-         </children>
-      </AnchorPane>
+      <Button fx:id="ButtonProblem" layoutX="75.0" layoutY="50.0" mnemonicParsing="false" onAction="#ReportProblem" prefHeight="51.0" prefWidth="133.0" style="-fx-background-color: #f2ffcc;" text="Report Problem" />
+      <Button fx:id="ButtonViewAnnouncements" layoutX="75.0" layoutY="205.0" mnemonicParsing="false" onAction="#ViewAnnouncement" prefHeight="51.0" prefWidth="133.0" style="-fx-background-color: #f2ffcc;" text="View Announcements" />
+      <Button fx:id="ButtonViewEvent" layoutX="75.0" layoutY="128.0" mnemonicParsing="false" onAction="#ViewEvent" prefHeight="51.0" prefWidth="133.0" style="-fx-background-color: #f2ffcc;" text="View Events" />
+      <TitledPane animated="false" layoutY="1.0" prefHeight="33.0" prefWidth="282.0" style="-fx-background-color: #d6e0f5;" text="Community In Action">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </TitledPane>
    </children>
 </AnchorPane>
